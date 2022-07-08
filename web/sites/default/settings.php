@@ -780,7 +780,7 @@ $databases['default']['default'] = array(
     'driver' => 'mysql',
     'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = '../config';
+$settings['config_sync_directory'] = '../config/sync';
 $settings["file_temp_path"] = "/tmp";
 
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
