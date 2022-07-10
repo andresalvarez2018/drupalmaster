@@ -1,0 +1,24 @@
+uuid: d70079f7-7b8e-42f2-9b4e-e41e4cd77a7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.categorias
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__categorias_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:categorias-block_1'
+settings:
+  id: 'views_block:categorias-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
