@@ -61,5 +61,4 @@ function drupalmaster_core_preprocess_node(&$variables)
             $node->save();
             break;
     }
-
 }
