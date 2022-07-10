@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * Contains drupalmaster_core.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_help().
+ */
+function drupalmaster_core_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        // Main module help for the drupalmaster_core module.
+        case 'help.page.drupalmaster_core':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('My Awesome Module') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function drupalmaster_core_theme()
+{
+    return [
+        'drupalmaster_core' => [
+            'render element' => 'children',
+        ],
+    ];
+}
+
+function drupalmaster_core_node_view_alter(array &$build, Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display)
+{
+
+    if ($entity->bundle() == 'article') {
+        // @todo: Agregar validacion a view mode full
+        $build['#cache']['max-age'] = 0;
+        \Drupal::service('page_cache_kill_switch')->trigger();
+    }
+
+}
+
+function drupalmaster_core_preprocess_node(&$variables)
+{
+    $node = $variables['node'];
+    switch ($variables['node']->getType()) {
+        case "article":
+            $nid = $node->get('nid')->getValue()[0]["value"];
+            $node = Node::load($nid);
+            $visitas = $node->field_visitas->value;
+            $visitas = intval($visitas) + 1;
+            $node->set('field_visitas', $visitas);
+            $node->save();
+            break;
+    }
+
+}

@@ -1,0 +1,20 @@
+uuid: e2483b3a-1fd4-4497-9235-9a8ade56367b
+langcode: es
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - olivero
+id: addtoanybuttons
+theme: olivero
+region: social
+weight: 0
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'AddToAny buttons'
+  label_display: '0'
+  provider: addtoany
+visibility: {  }

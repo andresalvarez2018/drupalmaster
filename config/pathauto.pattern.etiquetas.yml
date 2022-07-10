@@ -1,0 +1,22 @@
+uuid: ac1b38f0-af57-486c-9264-88ee0fc5308a
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: etiquetas
+label: Etiquetas
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:name]'
+selection_criteria:
+  f506465e-a06a-4590-a825-d48d3c572cf3:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: f506465e-a06a-4590-a825-d48d3c572cf3
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      tags: tags
+selection_logic: and
+weight: -5
+relationships: {  }
