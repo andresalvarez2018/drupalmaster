@@ -788,6 +788,6 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 }
 $settings['trusted_host_patterns'] = [
     '^drupalmaster\.com$',
-    '^.+\.drupalmaster\.com$',
+    '+\.drupalmaster\.com$',
     '^drupalmaster\.lndo\.site$',
 ];
