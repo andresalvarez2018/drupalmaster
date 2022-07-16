@@ -1,0 +1,15 @@
+uuid: 24a418aa-ec41-4ee4-9948-5dfa04ec4f28
+langcode: es
+status: true
+dependencies: {  }
+name: cta
+label: CTA
+effects:
+  998f20bd-9d1f-4dd6-ba64-d6665ae26a45:
+    uuid: 998f20bd-9d1f-4dd6-ba64-d6665ae26a45
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

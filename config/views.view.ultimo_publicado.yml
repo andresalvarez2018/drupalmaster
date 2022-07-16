@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_image
     - field.storage.node.field_visitas
-    - image.style.medium
+    - image.style.cta
     - node.type.article
   module:
     - image
@@ -82,7 +82,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: medium
+            image_style: cta
             image_loading:
               attribute: lazy
           group_column: ''
