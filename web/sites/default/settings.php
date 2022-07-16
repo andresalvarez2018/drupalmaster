@@ -272,7 +272,7 @@ $settings['hash_salt'] = 'a5eDs2gAWzX4D5kStH-YF5xcyme1wy4edxqhAw89EfneHYy3eot-H9
  * After finishing the upgrade, be sure to open this file again and change the
  * TRUE back to a FALSE!
  */
-$settings['update_free_access'] = true;
+$settings['update_free_access'] = false;
 
 /**
  * Fallback to HTTP for Update Manager and for fetching security advisories.
@@ -786,3 +786,8 @@ $settings["file_temp_path"] = "/tmp";
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
     include $app_root . '/' . $site_path . '/settings.local.php';
 }
+$settings['trusted_host_patterns'] = [
+    '^drupalmaster\.com$',
+    '^.+\.drupalmaster\.com$',
+    '^drupalmaster\.lndo\.site$',
+];
