@@ -8,4 +8,6 @@ id: global
 label: Global
 tags:
   canonical_url: '[current-page:url]'
-  title: '[current-page:title] | [site:name]'
+  description: 'Este aplicativo es un biblioteca virtual para compartir conocimiento  mutuo sobre las metologías de desarrollo en Drupal'
+  keywords: 'Drupal, Master'
+  title: '[site:name]'
