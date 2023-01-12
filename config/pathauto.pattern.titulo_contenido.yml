@@ -9,14 +9,15 @@ label: Contenido
 type: 'canonical_entities:node'
 pattern: '/[node:title]'
 selection_criteria:
-  51fe4b8b-856e-4503-a498-6cf9c9ef0215:
+  c4de3e28-5a2d-4e40-becf-bd28f1127d09:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 51fe4b8b-856e-4503-a498-6cf9c9ef0215
+    uuid: c4de3e28-5a2d-4e40-becf-bd28f1127d09
     context_mapping:
       node: node
     bundles:
       article: article
+      landing_page: landing_page
       page: page
 selection_logic: and
 weight: -5

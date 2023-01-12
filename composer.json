@@ -34,6 +34,7 @@
         "drupal/search404": "^2.0",
         "drupal/seo_checklist": "^5.1",
         "drupal/simple_sitemap": "^4.1",
+        "drupal/webform": "^6.1",
         "drupal/yoast_seo": "^1.7",
         "drush/drush": "^11.0"
     },

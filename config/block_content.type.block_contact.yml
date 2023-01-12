@@ -1,0 +1,8 @@
+uuid: 74cc6a00-0224-40f4-99c8-f6bdda8caa07
+langcode: es
+status: true
+dependencies: {  }
+id: block_contact
+label: 'Block Contact'
+revision: 0
+description: ''
