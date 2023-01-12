@@ -1,0 +1,20 @@
+uuid: 18c03f3d-d20c-44de-8d9e-df6345f2a0f9
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - amp
+_core:
+  default_config_hash: A_l2EXUJdC7jALmUBwpEvGmojvxbr0GCEGkKo0O9Woo
+name: amp_1200x900_4_3
+label: 'AMP 1200x900 - 4:3'
+effects:
+  dcfea6b2-a0c0-42fb-8349-ada7e9655e7d:
+    uuid: dcfea6b2-a0c0-42fb-8349-ada7e9655e7d
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1200
+      height: 900
+      anchor: center-center

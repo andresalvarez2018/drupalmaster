@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: es
+uuid: 5d26b5d5-9333-4f4c-9d2a-0ce52fb642fb
+name: 'Drupal Master'
+mail: webmaster@drupalmaster.live
+slogan: ''
+page:
+  403: ''
+  404: /search404
+  front: /ultimo-publicado
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es

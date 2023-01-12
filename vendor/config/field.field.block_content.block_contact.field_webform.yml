@@ -1,0 +1,32 @@
+uuid: c827c2c8-3e9c-425b-9703-07f6361d1c3b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_contact
+    - field.storage.block_content.field_webform
+    - webform.webform.contact
+  module:
+    - webform
+id: block_content.block_contact.field_webform
+field_name: field_webform
+entity_type: block_content
+bundle: block_contact
+label: Webform
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: bb3d886d-5e50-46b8-8b54-c2321b8b8f1b
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

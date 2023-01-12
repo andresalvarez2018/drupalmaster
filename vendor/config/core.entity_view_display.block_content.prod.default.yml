@@ -1,0 +1,31 @@
+uuid: ede8dda8-f1bc-4fcc-ae3c-3db43533480b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.prod
+    - field.field.block_content.prod.field_productos_images
+    - image.style.amp_1200x900_4_3
+  module:
+    - amp
+id: block_content.prod.default
+targetEntityType: block_content
+bundle: prod
+mode: default
+content:
+  field_productos_images:
+    type: amp_media
+    label: hidden
+    settings:
+      image_style: amp_1200x900_4_3
+      image_link: ''
+      layout: responsive
+      width: 4
+      height: 3
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

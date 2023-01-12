@@ -1,0 +1,25 @@
+uuid: 7e4b86a0-e891-4dc5-a888-6ae11ac35aac
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - olivero
+id: piedepagina
+theme: olivero
+region: footer_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Pie de página'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 288cda0d-c14c-4878-9e85-b9dc48822cfb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: titulo_contenido
+label: Contenido
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  c4de3e28-5a2d-4e40-becf-bd28f1127d09:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c4de3e28-5a2d-4e40-becf-bd28f1127d09
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      landing_page: landing_page
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }

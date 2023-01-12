@@ -1,0 +1,31 @@
+uuid: 1ad90750-beb8-4625-a3cb-592e944792de
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.field.block_content.hero.field_image
+    - image.style.amp_1200x675_16_9
+  module:
+    - amp
+id: block_content.hero.default
+targetEntityType: block_content
+bundle: hero
+mode: default
+content:
+  field_image:
+    type: amp_media
+    label: hidden
+    settings:
+      image_style: amp_1200x675_16_9
+      image_link: ''
+      layout: responsive
+      width: 16
+      height: 9
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

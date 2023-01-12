@@ -1,0 +1,29 @@
+uuid: 21142f1e-e5b0-4d50-958d-fb2643b9ef85
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.prod
+    - field.storage.block_content.field_productos_images
+    - media.type.image
+id: block_content.prod.field_productos_images
+field_name: field_productos_images
+entity_type: block_content
+bundle: prod
+label: 'Productos images'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

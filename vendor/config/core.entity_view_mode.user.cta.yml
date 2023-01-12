@@ -1,0 +1,10 @@
+uuid: 4d3a7889-0339-48c2-b353-94f45227b9c8
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user.cta
+label: CTA
+targetEntityType: user
+cache: true

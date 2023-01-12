@@ -1,0 +1,24 @@
+uuid: 59154ca6-4078-45b7-8104-ce2283ed8124
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_contact
+    - field.field.block_content.block_contact.field_webform
+  module:
+    - webform
+id: block_content.block_contact.default
+targetEntityType: block_content
+bundle: block_contact
+mode: default
+content:
+  field_webform:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

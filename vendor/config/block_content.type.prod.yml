@@ -1,0 +1,8 @@
+uuid: 678fddd5-39f9-4911-86f9-1238a650ebc9
+langcode: es
+status: true
+dependencies: {  }
+id: prod
+label: 'Productos images'
+revision: 0
+description: ''
