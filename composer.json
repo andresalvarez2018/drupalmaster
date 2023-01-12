@@ -19,6 +19,7 @@
         "drupal/addtoany": "^1.16",
         "drupal/admin_toolbar": "^3.1",
         "drupal/amp": "^3.5",
+        "drupal/backup_migrate": "^5.0",
         "drupal/console": "^1.9",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
