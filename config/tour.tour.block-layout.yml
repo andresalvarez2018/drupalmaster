@@ -29,14 +29,14 @@ tips:
   block-region:
     id: block-region
     plugin: text
-    label: 'Block Region'
+    label: 'Región de bloque'
     weight: 3
     selector: .block-region-select
     body: 'Assign or change the region of a block by clicking here. A dropdown list with all the regions will appear. You can place one block in multiple regions.'
   configure-block:
     id: configure-block
     plugin: text
-    label: 'Configure Block'
+    label: 'Configurar bloque'
     weight: 4
     selector: .dropbutton-widget
     body: 'By Clicking on "Configure" you can go ahead and edit the contents of the block, deal with the visibility settings and even change the placement of where it is on your theme.'

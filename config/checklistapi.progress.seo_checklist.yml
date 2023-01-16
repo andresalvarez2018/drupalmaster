@@ -1,7 +1,7 @@
 progress:
-  '#changed': 1657911731
+  '#changed': 1673823539
   '#changed_by': '1'
-  '#completed_items': 39
+  '#completed_items': 42
   '#items':
     install_and_enable_seo_checklist_module:
       '#completed': 1657910067
@@ -27,11 +27,20 @@ progress:
     create_pathauto_patterns:
       '#completed': 1657910275
       '#uid': '1'
+    install_and_enable_file_field_paths_module:
+      '#completed': 1673823518
+      '#uid': '1'
+    configure_file_field_paths_module:
+      '#completed': 1673823518
+      '#uid': '1'
     install_and_enable_metatag_module:
       '#completed': 1657910067
       '#uid': '1'
     install_and_enable_schema_metatag:
       '#completed': 1657911731
+      '#uid': '1'
+    set_metatags_for_your_site:
+      '#completed': 1673823539
       '#uid': '1'
     install_and_enable_alternate_hreflang_module:
       '#completed': 1657910647

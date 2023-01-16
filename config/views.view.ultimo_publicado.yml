@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_image
     - field.storage.node.field_visitas
-    - image.style.cta
+    - image.style.amp_1200x900_4_3
     - node.type.article
   module:
     - image
@@ -80,7 +80,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: cta
+            image_style: amp_1200x900_4_3
             image_loading:
               attribute: lazy
           group_column: ''

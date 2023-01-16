@@ -1,0 +1,46 @@
+uuid: bada4721-aded-4fc4-916b-70f850cb9285
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.fun_facts.body
+    - field.field.node.fun_facts.field_image_media
+    - node.type.fun_facts
+  module:
+    - amp
+    - text
+    - user
+id: node.fun_facts.default
+targetEntityType: node
+bundle: fun_facts
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image_media:
+    type: amp_media
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      layout: responsive
+      width: 16
+      height: 9
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

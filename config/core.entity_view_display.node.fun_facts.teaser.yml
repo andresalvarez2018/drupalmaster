@@ -1,0 +1,34 @@
+uuid: e24ebc75-bf36-4a94-85e3-0759697b1c6f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.fun_facts.body
+    - field.field.node.fun_facts.field_image_media
+    - node.type.fun_facts
+  module:
+    - text
+    - user
+id: node.fun_facts.teaser
+targetEntityType: node
+bundle: fun_facts
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_image_media: true
+  langcode: true

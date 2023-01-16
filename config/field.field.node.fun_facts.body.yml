@@ -1,0 +1,23 @@
+uuid: 858d53c2-56b1-4ccf-8c8e-b6d47efed8e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.fun_facts
+  module:
+    - text
+id: node.fun_facts.body
+field_name: body
+entity_type: node
+bundle: fun_facts
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

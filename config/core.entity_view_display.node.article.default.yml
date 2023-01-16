@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.article.field_tags
     - field.field.node.article.field_visitas
     - field.field.node.article.field_yoast_seo
+    - image.style.amp_1200x675_16_9
     - node.type.article
   module:
     - comment
@@ -52,7 +53,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: amp_1200x675_16_9
       image_loading:
         attribute: lazy
     third_party_settings: {  }
