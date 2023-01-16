@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "defuse/php-encryption": "^2.3",
         "drupal/addtoany": "^1.16",
         "drupal/admin_toolbar": "^3.1",
@@ -59,11 +60,22 @@
             "drupal/core-project-message": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/console-extend-plugin": true,
-            "wikimedia/composer-merge-plugin": true
+            "wikimedia/composer-merge-plugin": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
     "extra": {
+        "composer-exit-on-patch-failure": true, 
+        "patches": {
+            "drupal/amp": {
+                "issue": "https://www.drupal.org/files/issues/2022-11-02/amp-stristr-warning-patch.diff"
+            },
+            "drupal/simple_sitemap":{
+                "blank page" : "https://www.drupal.org/files/issues/2020-10-23/3154494-14-xls-in-subdirectory.patch",
+                "multi-language site" : "https://www.drupal.org/files/issues/2020-04-28/3131672-2.patch"
+            }
+        },
         "merge-plugin": {
             "include": [
                 "web/modules/contrib/webform/composer.libraries.json"

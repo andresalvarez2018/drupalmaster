@@ -82,7 +82,7 @@ class HreflangConfigSubscriber implements EventSubscriberInterface {
    * @param \Drupal\Core\Config\ConfigCrudEvent $event
    *   The ConfigCrudEvent to process.
    */
-  public function onSave(ConfigCrudEvent $event) {
+  public function onSave(ConfigCrudEvent $event): void {
     if ($event->getConfig()->getName() !== 'hreflang.settings') {
       return;
     }

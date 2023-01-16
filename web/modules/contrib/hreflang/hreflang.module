@@ -11,8 +11,11 @@ use Drupal\Core\Url;
 
 /**
  * Implements hook_page_attachments().
+ *
+ * @phpstan-ignore-next-line Hook implementations should not duplicate @param
+ * documentation.
  */
-function hreflang_page_attachments(array &$page) {
+function hreflang_page_attachments(array &$page): void {
   // No need to add hreflang tags for 404/403 pages.
   if (\Drupal::request()->attributes->has('exception')) {
     return;
@@ -106,8 +109,11 @@ function hreflang_content_translation_get_entity() {
 
 /**
  * Implements hook_help().
+ *
+ * @phpstan-ignore-next-line Hook implementations should not duplicate @return
+ * documentation.
  */
-function hreflang_help($route_name) {
+function hreflang_help(?string $route_name): array {
   if ($route_name === 'hreflang.admin_settings' || $route_name === 'help.page.hreflang') {
     return [
       '#type' => 'html_tag',
@@ -115,4 +121,5 @@ function hreflang_help($route_name) {
       '#value' => t('Hreflang module automatically adds an hreflang tag to the page for each enabled language.'),
     ];
   }
+  return [];
 }

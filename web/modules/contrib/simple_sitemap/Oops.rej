@@ -1,0 +1,10 @@
+@@ -18,7 +18,8 @@
+    * Adds the XML stylesheet to the XML page.
+    */
+   public function writeXsl() {
+-    $xsl_url = Url::fromRoute('simple_sitemap.sitemap_xsl')->toString();
++    $provider = \Drupal::service('router.route_provider');
++    $xsl_url = $provider->getRouteByName('simple_sitemap.sitemap_xsl')->getPath();
+     $this->writePI('xml-stylesheet', 'type="text/xsl" href="' . $xsl_url . '"');
+   }
+ 

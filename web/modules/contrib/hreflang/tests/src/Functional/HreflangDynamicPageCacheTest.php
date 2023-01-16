@@ -2,7 +2,6 @@
 
 namespace Drupal\Tests\hreflang\Functional;
 
-use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\Tests\BrowserTestBase;
 
 /**
@@ -12,24 +11,20 @@ use Drupal\Tests\BrowserTestBase;
  */
 class HreflangDynamicPageCacheTest extends BrowserTestBase {
 
-  use StringTranslationTrait;
-
   /**
    * {@inheritdoc}
    */
   protected $defaultTheme = 'stark';
 
   /**
-   * Modules to enable.
-   *
-   * @var string[]
+   * {@inheritdoc}
    */
   protected static $modules = ['hreflang', 'language', 'dynamic_page_cache'];
 
   /**
    * Functional tests for the hreflang tag.
    */
-  public function testHreflangTag() {
+  public function testHreflangTag(): void {
     global $base_url;
     // User to add language.
     $admin_user = $this->drupalCreateUser([

@@ -5,8 +5,9 @@ name: Hreflang
 package: Multilingual
 type: module
 configure: hreflang.admin_settings
+php: 7.1
 
-# Information added by Drupal.org packaging script on 2022-02-28
-version: '8.x-1.9'
+# Information added by Drupal.org packaging script on 2023-01-12
+version: '8.x-1.10'
 project: 'hreflang'
-datestamp: 1646083446
+datestamp: 1673520160

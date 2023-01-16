@@ -17,7 +17,7 @@ class HreflangContentTranslationTest extends NodeTestBase {
   protected $defaultTheme = 'stark';
 
   /**
-   * Modules to enable.
+   * {@inheritdoc}
    *
    * @var string[]
    */
@@ -26,7 +26,7 @@ class HreflangContentTranslationTest extends NodeTestBase {
   /**
    * Functional tests for the hreflang tag.
    */
-  public function testHreflangTag() {
+  public function testHreflangTag(): void {
     global $base_url;
     // User to add language.
     $admin_user = $this->drupalCreateUser([

@@ -5,7 +5,7 @@ config:
 services:
   appserver:
     type: php:8.1
-  myservice:
+  phpmyadmin:
     type: phpmyadmin
 
     

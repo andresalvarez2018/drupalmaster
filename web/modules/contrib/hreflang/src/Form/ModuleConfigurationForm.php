@@ -19,6 +19,9 @@ class ModuleConfigurationForm extends ConfigFormBase {
 
   /**
    * {@inheritdoc}
+   *
+   * @return string[]
+   *   The editable config names.
    */
   protected function getEditableConfigNames() {
     return [
@@ -28,6 +31,14 @@ class ModuleConfigurationForm extends ConfigFormBase {
 
   /**
    * {@inheritdoc}
+   *
+   * @param mixed[] $form
+   *   The settings form.
+   * @param \Drupal\Core\Form\FormStateInterface $form_state
+   *   The form state.
+   *
+   * @return mixed[]
+   *   The settings form.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $config = $this->config('hreflang.settings');
@@ -50,8 +61,13 @@ class ModuleConfigurationForm extends ConfigFormBase {
 
   /**
    * {@inheritdoc}
+   *
+   * @param mixed[] $form
+   *   The settings form.
+   * @param \Drupal\Core\Form\FormStateInterface $form_state
+   *   The form state.
    */
-  public function submitForm(array &$form, FormStateInterface $form_state) {
+  public function submitForm(array &$form, FormStateInterface $form_state): void {
     $this->config('hreflang.settings')
       ->set('x_default', $form_state->getValue('x_default'))
       ->set('defer_to_content_translation', $form_state->getValue('defer_to_content_translation'))

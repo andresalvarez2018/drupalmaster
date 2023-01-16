@@ -2,7 +2,6 @@
 
 namespace Drupal\Tests\hreflang\Functional;
 
-use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\Tests\BrowserTestBase;
 
 /**
@@ -12,24 +11,20 @@ use Drupal\Tests\BrowserTestBase;
  */
 class HreflangTest extends BrowserTestBase {
 
-  use StringTranslationTrait;
-
   /**
    * {@inheritdoc}
    */
   protected $defaultTheme = 'stark';
 
   /**
-   * Modules to enable.
-   *
-   * @var string[]
+   * {@inheritdoc}
    */
   protected static $modules = ['hreflang', 'language'];
 
   /**
    * Functional tests for the hreflang tag.
    */
-  public function testHreflangTag() {
+  public function testHreflangTag(): void {
     global $base_url;
     // User to add language.
     $admin_user = $this->drupalCreateUser([
@@ -64,7 +59,7 @@ class HreflangTest extends BrowserTestBase {
       'language_interface[enabled][language-url]' => FALSE,
       'language_interface[enabled][language-session]' => '1',
     ];
-    $this->submitForm($edit, $this->t('Save settings'));
+    $this->submitForm($edit, 'Save settings');
 
     $this->drupalGet('admin');
     $this->assertSession()->responseContains('<link rel="alternate" hreflang="fr" href="' . $base_url . '/admin?language=fr" />');

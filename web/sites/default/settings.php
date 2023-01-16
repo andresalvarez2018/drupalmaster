@@ -786,3 +786,4 @@ $settings["file_temp_path"] = "/tmp";
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
     include $app_root . '/' . $site_path . '/settings.local.php';
 }
+$settings['simple_sitemap_engines.index_now.key'] = '648ea4df-59ab-4c2d-a498-ba7b5bed647f';

@@ -41,6 +41,7 @@ class SitemapWriter extends \XMLWriter {
     $xsl_url = $this->routeProvider
       ->getRouteByName('simple_sitemap.sitemap_xsl')
       ->getPath();
+    $xsl_url = ltrim($xsl_url,'/');
 
     // Now substituting path placeholder as URL::fromRoute() would do.
     $xsl_url = str_replace('{sitemap_generator}', $generator_id, $xsl_url);

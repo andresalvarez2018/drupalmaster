@@ -48,6 +48,10 @@ class ComposerStaticInit16c5e4d0c120d14d206f0ab4f357699a
     );
 
     public static $prefixLengthsPsr4 = array (
+        'c' => 
+        array (
+            'cweagans\\Composer\\' => 18,
+        ),
         'W' => 
         array (
             'Wikimedia\\Composer\\Merge\\V2\\' => 28,
@@ -191,6 +195,10 @@ class ComposerStaticInit16c5e4d0c120d14d206f0ab4f357699a
     );
 
     public static $prefixDirsPsr4 = array (
+        'cweagans\\Composer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cweagans/composer-patches/src',
+        ),
         'Wikimedia\\Composer\\Merge\\V2\\' => 
         array (
             0 => __DIR__ . '/..' . '/wikimedia/composer-merge-plugin/src',
